@@ -1,12 +1,12 @@
 import cloudshell.api.cloudshell_api as cs_api
 from cloudshell.api.common_cloudshell_api import CloudShellAPIError
 
-_host = 'qualias-maa-02.force10networks.com'
+_host = 'ksaper.homeip.net'
 _user = 'admin'
-_pwrd = 'admin'
+_pwrd = '808c$root'
 _domm = 'Global'
 
-target = 'MAA-S4810-3993'
+target = 'NYC_01'
 BREAK = '=-'*56
 try:
     session = cs_api.CloudShellAPISession(_host, _user, _pwrd, _domm)
