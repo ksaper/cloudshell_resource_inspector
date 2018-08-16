@@ -141,7 +141,7 @@ The inspector can also be run with a number of options.
     > `python csinspect.py NYC_01 -x`
 + brief look up with reservations added:
     > `python csinspect.py NYC_01 -b -r`
-+ brief loop up with extended list of reservations added:
++ brief look up with extended list of reservations added:
     > `python csinspect.py NYC_01 -b -x`
 + brief look up with attributes added:
     > `python csinspect.py NYC_01 -b -a`
