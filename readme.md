@@ -114,14 +114,14 @@ Attribute names are sorted by full name.
 ## Options
 The inspector can also be run with a number of options.
 
-+ -h:  Help Menu
-+ -b:  Brief Mode, will only return the Summary Block
-+ -a:  Attributes added to Brief Mode
-+ -k:  Kimono, open kimono mode decrypting attribute values
-+ -r:  Reservations added to Brief Mode
-+ -x:  eXtended list of current and pending reservations (shows all for 30 days), default is the first 5
-+ -c:  Configuration, returns the current configuration setting for the script (password value masked)
-+ -s:  Set a parameter with in the Configuration
++ -h:  **H**elp Menu
++ -b:  **B**rief Mode, will only return the Summary Block
++ -a:  **A**ttributes added to Brief Mode
++ -k:  **K**imono, open kimono mode decrypting attribute values
++ -r:  **R**eservations added to Brief Mode
++ -x:  e**X**tended list of current and pending reservations (shows all for 30 days), default is the first 5
++ -c:  **C**onfiguration, returns the current configuration setting for the script (password value masked)
++ -s:  **S**et a parameter with in the Configuration
     + host:  Host Name or IP of the CloudShell instance to be used
     + user:  Admin User name to use
     + password:  Associated Password to be used
