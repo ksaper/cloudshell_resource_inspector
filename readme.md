@@ -83,7 +83,7 @@ If there are no current or future reservations, the system will only return one 
 Otherwise the `Total Reservations: X` will return with a series of entries for each reservation that the resource participates in.  
 Entries will be displayed in ascending order by start time.  In our example print out there are 4 entries.  
 Initially the number of entries displayed is limited to the first 5.  
-However there is an optional flag to display all Reservations Entries (`-f`).  
+However there is an optional flag to display all Reservations Entries (`-x`).  
 
 Each Reservation Block contains the following items:  
 - Name: Name of the reservation, as displayed in CloudShell
