@@ -93,7 +93,7 @@ Each Reservation Block contains the following items:
 - End: Scheduled end time of the reservation, ISO8601 (YYYY-MM-DD HH:MM), all time UTC
 - ID: UUID of the reservation, allows for copy paste lookups
 
-###Attributes
+### Attributes
 The final section will display all attributes listed on the resource.  
 It will list all attributes by a short name, and their current value.  
 All password type attributes by default list all values as `<**!**>`, even if blank.  
