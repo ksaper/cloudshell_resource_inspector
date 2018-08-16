@@ -1,3 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 .idea/workspace.xml
+
+src/inventory_inspect.py
