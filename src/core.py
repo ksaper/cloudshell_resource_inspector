@@ -99,21 +99,39 @@ class CloudShellResourceInspector(object):
 
     def look_for(self, term):
         key_term = ''
-        d = None
+        address_lookup = None
+        name_lookup = None
         try:
-            d = self.session.FindResources(resourceFullName=term, exactName=True, includeSubResources=False).Resources
-            if d:
-                return d[0].Name
+            name_lookup = self.session.FindResources(resourceFullName=term, exactName=False,
+                                                     includeSubResources=False).Resources
         except CloudShellAPIError as err:
             logging.error(err.message)
         try:
-            d = self.session.FindResources(resourceAddress=term, exactName=True, includeSubResources=False).Resources
-            if d:
-                return d[0].Name
-        except CloudShellAPIError:
-            msg = 'Unable to locate device - {}'.format(term)
-            logging.debug(msg)
-            print msg
+            address_lookup = self.session.FindResources(resourceAddress=term, exactName=False,
+                                                        includeSubResources=False).Resources
+        except CloudShellAPIError as err:
+            logging.error(err.message)
+
+        if not name_lookup and not address_lookup:
+            print 'Unable to locate "{}" resource by name or address'.format(term)
+        elif len(name_lookup) == 1 and not address_lookup:
+            key_term = name_lookup[0]
+        elif len(address_lookup) == 1 and not address_lookup:
+            key_term = address_lookup[0]
+        elif len(name_lookup) > 1:
+            names = []
+            for each in name_lookup:
+                names.append(each.Name)
+            print 'Multiple matches for {}'.format(term)
+            print ', '.join(names)
+        elif len(address_lookup) > 1:
+            names = []
+            for each in address_lookup:
+                names.append(each.Name)
+            print 'Multiple matches for {}'.format(term)
+            print ', '.join(names)
+
+        return key_term
 
     def _time_to_ISO8601(self, dts_in):
         # in_tup = time.strptime(dts_in, '%m/%d/%Y %H:%M')

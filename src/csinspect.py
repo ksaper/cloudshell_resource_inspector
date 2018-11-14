@@ -66,10 +66,12 @@ if ready:
                              password=flags.get('PASSWORD', ''), port=flags.get('PORT', ''))
     if show_configs:
         local.print_config()
-    try:
-        if has_tar:
-            local.session = local.open_session()
-            my_device = local.look_for(tar)
-            local.run_main(my_device)
-    except StandardError as err:
-        print '!- Error Stopped'
+
+    if has_tar:
+        local.session = local.open_session()
+        # my_device = local.look_for(tar)
+        local.run_main(tar)
+    else:
+        '!- Error:  No search term available'
+    # except StandardError as err:
+    #     print '!- Error Stopped'
