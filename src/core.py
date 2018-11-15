@@ -115,22 +115,22 @@ class CloudShellResourceInspector(object):
         if not name_lookup and not address_lookup:
             print 'Unable to locate "{}" resource by name or address'.format(term)
         elif len(name_lookup) == 1 and not address_lookup:
-            key_term = name_lookup[0]
+            key_term = name_lookup[0].FullName
         elif len(address_lookup) == 1 and not address_lookup:
-            key_term = address_lookup[0]
+            key_term = address_lookup[0].FullName
         elif len(name_lookup) > 1:
             names = []
             for each in name_lookup:
-                names.append(each.Name)
+                names.append(each.FullName)
             print 'Multiple matches for {}'.format(term)
             print ', '.join(names)
         elif len(address_lookup) > 1:
             names = []
             for each in address_lookup:
-                names.append(each.Name)
+                names.append(each.FullName)
             print 'Multiple matches for {}'.format(term)
             print ', '.join(names)
-
+            
         return key_term
 
     def _time_to_ISO8601(self, dts_in):
