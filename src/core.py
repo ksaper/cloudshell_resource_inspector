@@ -26,7 +26,7 @@ class CloudShellResourceInspector(object):
         self.config = self._initialize()
         self.session = None
 
-    def _initialize(self, config_file='./src/config.json', log_file='./src/logs/csri.log',
+    def _initialize(self, config_file='./config.json', log_file='./logs/csri.log',
                     log_level='ERROR'):
         """
 
