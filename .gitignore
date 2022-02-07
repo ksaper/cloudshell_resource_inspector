@@ -5,3 +5,9 @@
 src/inventory_inspect.py
 
 .idea/workspace.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/workspace.xml
+src/config.json
+src/core.py
+src/csinspect.py
