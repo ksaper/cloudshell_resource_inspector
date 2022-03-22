@@ -3,7 +3,6 @@ from core import CloudShellResourceInspector, LBREAK
 from cascade import Cascade
 import sys
 
-
 local = CloudShellResourceInspector()
 
 # print '~~~~~~~~~~~~~~~~~'

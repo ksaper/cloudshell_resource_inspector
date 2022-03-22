@@ -53,7 +53,7 @@ class CloudShellResourceInspector(object):
                                                      port=str(self.config['port'])
                                                      )
         except CloudShellAPIError as err:
-            logging.CRITICAL(err.message)
+            logging.critical(err.message)
 
         return cs_session
 
@@ -149,6 +149,8 @@ class CloudShellResourceInspector(object):
 
     def run_main(self, search_term=''):
         name = self.look_for(term=search_term)
+        reservations = list()
+
         if name:
             try:
                 details = self.session.GetResourceDetails(resourceFullPath=name)
