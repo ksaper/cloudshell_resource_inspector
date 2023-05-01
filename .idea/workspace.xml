@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="64895f2b-c84b-4eaf-9c2f-9af4d2f64f89" name="Default" comment="" />
+    <list default="true" id="64895f2b-c84b-4eaf-9c2f-9af4d2f64f89" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="6987106f-3fcd-45bb-b20f-cfde333db284" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1m2CPgBm14aE6M8A94dqvme0r5t" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,6 +46,8 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python&#10;BuildoutCfg" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -200,6 +210,9 @@
       <workItem from="1567808464134" duration="295000" />
       <workItem from="1608682277531" duration="3949000" />
       <workItem from="1608759932691" duration="5000" />
+      <workItem from="1678467286287" duration="671000" />
+      <workItem from="1678478114069" duration="4000" />
+      <workItem from="1679585415924" duration="84000" />
     </task>
     <servers />
   </component>
